@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>70</x>
+      <y>170</y>
+      <w>200</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Person has some tools 
+that aren't used a lot</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>90</x>
+      <y>280</y>
+      <w>160</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Solar panel 
+needs repair</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>90</x>
+      <y>70</y>
+      <w>160</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Person wants beans</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>80</x>
+      <y>540</y>
+      <w>190</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Community wants to
+host event</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLUseCase</id>
+    <coordinates>
+      <x>90</x>
+      <y>400</y>
+      <w>190</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Person wants to travel
+across continent</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

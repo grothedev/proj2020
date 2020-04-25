@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>7</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>945</x>
+      <y>406</y>
+      <w>238</w>
+      <h>147</h>
+    </coordinates>
+    <panel_attributes>_ResourceStock_
+# a collection of a single resource type #
+--
+id
+name: String
+type: ResourceType
+qty: int
+utility: Utility #should be under res type?
+location: 
+rate: Rate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1344</x>
+      <y>259</y>
+      <w>140</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>_Rate_
+--
+value: float
+unit: Unit
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>581</x>
+      <y>448</y>
+      <w>168</w>
+      <h>84</h>
+    </coordinates>
+    <panel_attributes>_ResourceType_
+--
+id
+properties: PhysicalProperties
+rarity: float
+components: List&lt;Resource&gt;
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>357</x>
+      <y>777</y>
+      <w>140</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>_PhysicalProperties_
+--
+density: float
+luminoscity:
+safety: 
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>63</x>
+      <y>623</y>
+      <w>175</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>_Utility_
+[a function/operation 
+regularly performed 
+to maintain infrastructure]
+--
+id
+name: String
+requirements: List&lt;Resource&gt;
+description: String
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>574</x>
+      <y>574</y>
+      <w>140</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>_Resource_
+--
+id
+type: ResourceType
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>595</x>
+      <y>791</y>
+      <w>154</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>_ToolType_
+--
+id:
+name: String
+function: 
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>595</x>
+      <y>693</y>
+      <w>140</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>_Tool_
+--
+id
+type: ToolType
+condition: 
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>973</x>
+      <y>588</y>
+      <w>154</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>_ToolLibrary_
+--
+id
+supply: List&lt;Resource&gt;
+location: Location
+info: String
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>364</x>
+      <y>245</y>
+      <w>175</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>_Request_
+--
+id
+material: List&lt;Resource&gt;
+labor: List&lt;Labor&gt;
+reason: String
+utility: Utility
+urgency: int
+timeNeeded: TimeFrame
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>399</x>
+      <y>686</y>
+      <w>140</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>_Material_
+--
+id:
+properties: PhysicalProperties</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>308</x>
+      <y>441</y>
+      <w>140</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>_Human_
+--
+name
+location: Location
+health: 
+skills: 
+hobbies: 
+family: List&lt;Relation&gt;
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>63</x>
+      <y>441</y>
+      <w>182</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>_Tribe_
+--
+id
+name: String
+members: List&lt;Human&gt;
+resources: List&lt;ResourceStock&gt;
+location: Location
+functions</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>644</x>
+      <y>525</y>
+      <w>21</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>504</x>
+      <y>644</y>
+      <w>133</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;60.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>623</x>
+      <y>644</y>
+      <w>28</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;20.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>434</x>
+      <y>735</y>
+      <w>28</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>20.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1022</x>
+      <y>546</y>
+      <w>21</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>707</x>
+      <y>581</y>
+      <w>280</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>10.0;10.0;380.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1253</x>
+      <y>420</y>
+      <w>252</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>_WasteDeposit_
+--
+id
+location
+inputs: List&lt;ResourceType&gt;
+outputs: List&lt;ResourceType&gt;
+rate: Rate
+powerUsage: float (is this just a resourcetype?)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>777</x>
+      <y>245</y>
+      <w>336</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>_NetworkMap_
+--
+id
+geometry: Graph&lt;ResourceStock&gt;
+objectsTransported: ResourceType
+requirements: Utility
+properties: HashMap&lt;GraphEdge, NetworkProperties&gt;
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>763</x>
+      <y>693</y>
+      <w>140</w>
+      <h>56</h>
+    </coordinates>
+    <panel_attributes>_Labor_
+--
+id
+energy
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>651</x>
+      <y>644</y>
+      <w>161</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>210.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1176</x>
+      <y>238</y>
+      <w>140</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>_NetworkProperties_
+--
+id
+condition: 
+maintenanceProcesses:
+flowRate: Rate</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>238</x>
+      <y>441</y>
+      <w>84</w>
+      <h>28</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>100.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>49</x>
+      <y>49</y>
+      <w>280</w>
+      <h>91</h>
+    </coordinates>
+    <panel_attributes>valign=center
+fontsize=50
+lw=2.5
+WIP</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

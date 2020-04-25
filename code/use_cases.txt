@@ -1,0 +1,5 @@
+use cases:
+    - because of the toilet paper shortage, i decide i want to start manufacturing toilet paper out of the hemp that i happen to have growing in my backyard. i tell my neighbors and begin to sell/trade it to them. obviously i can't just go through all the paperwork and establish myself as an industrial hemp farmer and fabric manufacturer, but through this digital communications network, i can provide my neighboors with toilet paper and other goods i have made from my hemp.
+    - medical: a doctor can provide medical service to those around him. this presents the issue of credibility. if he has a medical liscense that would be the best bet.
+    - clean water: this would be for more dire situations
+    - ride-sharing, delivery
